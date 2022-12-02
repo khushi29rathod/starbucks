@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Document</title>
+    <link rel="stylesheet" href="progg5.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="img1"><img src="sb2.png.png"></a>
+            <div id="nav">
+                <a href="#">home</a>
+                <a href="#">menu</a>
+                <a href="#">what's new</a>
+                <a href="#">contact</a>
+            </div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorum possimus laboriosam omnis quam! Iusto mollitia distinctio sit, consectetur perferendis quas repudiandae voluptatem aut odio corporis enim dolorum veritatis? Magnam?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="sb1.png.png" class="Starbucks">   
+            </div> 
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" oneclick="imgSlider('sb1.png');changeCircleColor('#017143')" ></li>
+            <li><img src="thumb2.png" oneclick="imgSlider('sb2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" oneclick="imgSlider('sb.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="logo1.png.png" alt=""></a></li>
+            <li><a href="#"><img src="logo2.png.png" alt=""></a></li>
+            <li><a href="#"><img src="logo3.png.png" alt=""></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Starbucks').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle= document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+</html>
